@@ -31,7 +31,7 @@ body::-webkit-scrollbar{
 
 .barcrawlroute{
     font-family: 'century-gothic', sans-serif;
-    font-weight: bold;
+    font-weight:100;
     font-size: 2vw;
     margin:auto;
     justify-content: center;
@@ -94,5 +94,9 @@ body::-webkit-scrollbar{
     }
     .walking-animation{
         width: 60%;
+    }
+    .google-map iframe{
+        width: 450px;
+        height: 300px;
     }
 }
