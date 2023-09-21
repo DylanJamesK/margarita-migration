@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    cursor:default;
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+}
+
+body{
+    background: linear-gradient(-45deg,rgb(189, 8, 189), rgb(66, 78, 243), rgb(119, 175, 77), #fcfc80);
+    background-size: 400% 400%;
+    width: 100%;
+    animation: animate 15s ease infinite;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.barcrawlroute{
+    font-family: 'century-gothic', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding-left:10%;
+}
+
+.walking-animation{
+    display:grid;
+    place-items: center;
+    width: 40%;
+    justify-content: center;
+    margin:auto;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.marquee {
+    position: relative;
+    width: 200vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .track {
+    font-family: 'barricada-pro';
+    font-weight: bold;
+    font-size: 120px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0%); }
+  }
+
+  .google-map {
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+@media screen and (max-width: 992px) {
+    .barcrawlroute{
+        font-family: 'century-gothic', sans-serif;
+        font-weight: bold;
+        font-size: 4.5vw;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding:10%;
+    }
+    .walking-animation{
+        width: 60%;
+    }
+}
