@@ -96,7 +96,7 @@ body::-webkit-scrollbar{
         width: 60%;
     }
     .google-map iframe{
-        width: 450px;
-        height: 300px;
+        width: 350px;
+        height: 200px;
     }
 }
