@@ -1,0 +1,3 @@
+# margarita-migration
+
+This is just a quick website I created to host a margarita bar crawl and share the information on it! Also I wanted a place to show off the animation I created...
